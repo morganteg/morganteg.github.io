@@ -1,55 +1,226 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Site
+repository: morganteg.github.io
+favicon: images/favicon.ico
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# Content configuration version
+version: 2
+
+# Personal info
+name: Gabriele Morgante
+title: Software and IoT Engineer 
+email: gabriele.morgante83@gmail.com
+website: morganteg.github.io
+
+# Dark Mode (true/false/never)
+darkmode: true
+
+# Social links
+# twitter_username: facespics
+github_username:  morganteg
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jameswgrant
+linkedin_username: gabrielemorgante
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+orcid_username: 0000-0002-3337-1014
+
+# Additional icon links
+# additional_links:
+# - title: itsgoingto.be
+#   icon: fas fa-globe
+#   url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  In my <mark>12+ career</mark> I have worked as a <mark>Software and IoT Engineer</mark> in the fields of consulting, finance, and research and development. 
+  I love to identify the most suitable technical solutions to bring improvements to projects, customers, teams and companies. 
+  I managed and participated in <mark>30+ projects</mark> using Java technologies, Spring frameworks and embedded IoT systems such as Arduino, ESP-32, Raspberry Pi. 
+  I also gained experience in developing a startup in the hotel industry. I am always ready to face <mark>new challenges</mark>, always trying to identify the most efficient and elegant solution and the most suitable technologies. 
+  I like to manage projects and development teams, always trying to bring relevant added value and to support people in the practice of <mark>continuous-improvement</mark>, following the Agile methodology.
+content:
+  # - title: Projects # Title for the section
+  #   layout: list # Type of content section (list/text)
+  #   content:
+  #     - layout: top-middle
+  #       title: Super awesome project
+  #       link: github.com/sproogen
+  #       # link_text: Project Website
+  #       additional_links:
+  #         - title:  sproogen/modern-resume-theme
+  #           icon: fab fa-github
+  #           url: github.com/sproogen/modern-resume-theme
+  #         # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+  #         #   icon: fab fa-github
+  #         #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+  #       quote: >
+  #         This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+  #       description: | # this will include new lines to allow paragraphs
+  #         I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top
+        title: ResilTech srl
+        link: resiltech.com
+        # link_text: boringcompany.com
+        sub_title: Head of Software/IoT Engineering department, Head of Lecce Office
+        caption: April 2019 - Present
+        # quote: >
+        #   Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+            As Head of the Software / IoT Engineering department in the Research and Development sector, 
+            I dealt with the management of software projects and software development teams up to five members according to the Agile methodology. 
+            At the same time I played the role of Solution Architect for all projects in the R&D sector, at European scale (e.g. Aalborg University), 
+            for the design and implementation of web-oriented software and IoT embedded architectures for environmental monitoring and analysis of electrical Smart Grids. 
+            I also completely supervised the development of a corporate tool in the field of Cybersecurity for Risk Assessment. 
+            I have chosen and used different technologies such as Java, Python, Spring-Boot, Maven, Docker, Bootstrap, Angular, Git, SVN, MySql 
+            for the development of web- oriented architectures, and C, Arduino, ESP32, Raspberry Pi, MQTT, Grafana, InfluxDB, MongoDB and various sensors (eg BME280) for environmental monitoring, for the development of IoT-oriented architectures. 
+            I used Ubuntu and Windows as Operating Systems (I prefer Linux in general) and JetBrains IntelliJ as IDE.
+      - layout: top
+        title: Revevol Group
+        link: revevol.eu
+        sub_title: Technical leader, senior cloud engineer
+        caption: September 2017 - March 2019
+        # quote: >
+        #   Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+        description: | # this will include new lines to allow paragraphs
+            As Technical leader and Senior Cloud Engineer in Revevol Group I have been involved in the design and implementation of cloud-oriented applications 
+            for enterprise customers, based on Google Cloud Platform, Microsoft Azure and Amazon Web Services (AWS). 
+            I have also managed a development team for the implementation of a company software product. 
+            I used Java, Angular, Git, GCP, Datastore and MySql as main technologies. I used Windows as Operating System (I prefer Linux) and 
+            JetBrains IntelliJ as IDE.
+      - layout: top
+        title: eeekLab srl
+        # link: revevol.eu
+        sub_title: CEO/CTO
+        caption: January 2015 - December 2018
+        description: | # this will include new lines to allow paragraphs
+            As CEO/CTO of eeekLab srl I created and managed a startup with the aim of developing a business idea in the hotel sector through the design and 
+            implementation of the Channel Manager and Property management system "Heribergo" for the hotel management in terms of OTA channels 
+            (Online Travel Agency), reservations, expenses, costs / revenues. Integration with the Booking.com and Expedia.com APIs to update availability 
+            and rates and the retrieve of bookings. The main technologies adopted were Git, Python, Django, PostgreSQL, Celery, Redis, nginx, uWSGI, Ubuntu, Debian. 
+            I used Ubuntu as Operating System and JetBrains PyCharm as IDE.
+      - layout: top
+        title: Links Management and Technology S.p.A.
+        link: linksmt.it
+        sub_title: Project Leader, Java Architect, Senior Java Developer
+        caption: April 2008 - August 2017
+        description: | # this will include new lines to allow paragraphs
+            As Project Leader, Java Architect and Senior Java Developer in Links Management and Technology S.p.A. I have been involved in the design and development 
+            of web-oriented applications for banking clients, public administrations and companies. I organized development teams up to six members by 
+            adopting the "Scrum" Agile framework. I managed relationships with customers mainly from a technical perspective. I used Java, Liferay, Tomcat, JBoss, 
+            MySql, PostgreSQL, SVN, JSP, JSF, Javascript, JQuery as main technologies. I used Windows as Operating System (I prefer Linux) and Eclipse as IDE.
+      - layout: top
+        title: Accenture Technology Solutions
+        link: accenture.com
+        sub_title: Software Engineer
+        caption: January 2007 – March 2008
+        description: | # this will include new lines to allow paragraphs
+            As a Software Engineer at Accenture Technology Solutions, I have been involved in the integration of information systems through SAP XI/PI 
+            middleware and the development of custom Java bridges. I took care of the technical management of small development teams. 
+            I also took care of technical customer support. I used Windows as Operating System (I prefer Linux) and Eclipse as IDE.
+
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top
+        title: University of Florence
+        caption: September 2019 - present
+        sub_title: MSc Computer Science
+        # quote: >
+        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        # description: | # this will include new lines to allow paragraphs
+        #   During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+      - layout: top
+        title: Polytechnic University of Milan
+        caption: September 2001- September 2006
+        sub_title: BSc Computer Science Engineering
+        # quote: >
+        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        description: | # this will include new lines to allow paragraphs
+          Thesis: Design and implementation of a web-oriented e-commerce application in Java and JSP language for Eutopia s.r.l. using the tool WebRatio.
+
+  - title: Publications # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top
+        title: “On the Use of Common Information Model for Smart Grid Applications — A Conceptual Approach”
+        caption: IEEE Transactions on Smart Grid, 2021 (https://ieeexplore.ieee.org/abstract/document/9478925)
+        sub_title: K. Shahid, K. Nainar; R. Løvenstein Olsen; F. Iov; M. Lyhne; G. Morgante
+        # quote: >
+        #   “On the Use of Common Information Model for Smart Grid Applications — A Conceptual Approach”\
+        #   K. Shahid, K. Nainar; R. Løvenstein Olsen; F. Iov; M. Lyhne; G. Morgante
+        description: | # this will include new lines to allow paragraphs
+          Data integration from heterogeneous data sources in low-voltage (LV) power distribution grids will be valuable to distribution system operators (DSOs). 
+          The power measurements from customer premises need to be processed with other data such as grid topology, line parameters etc., 
+          to deploy smart grid applications (SGA) such as real-time grid monitoring and voltage regulation. The most challenging task for DSOs is to collect 
+          and integrate data from several sources as several entities are involved in the data management and access to databases are restricted. 
+          This paper presents an op E n common information M odel (CIM) BA sed sma R t grid application framewor K ( EMBARK ) to address the above-mentioned challenge. EMBARK is developed to be an efficient, modular and scalable architecture for extracting relevant grid related information from various asset management databases. A novel data management functionality is a part of EMBARK that enables data-driven update of settings and parameters of the algorithms behind smart grid applications. The proposed approach is demonstrated and numerically validated using grid data from a medium-sized distribution grid operator in Denmark. The architecture developed and presented in this paper can support all the phases from planning to the actual smart grid operation, i.e., automatically building the models to perform load flows, grid impact studies, planning, asset management etc.
+
+  - title: Trainings # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top
+        title: Professional Scrum Master
+        sub_title: Scrum.org
+        # sub_title: K. Shahid, K. Nainar; R. Løvenstein Olsen; F. Iov; M. Lyhne; G. Morgante
+        # quote: >
+        #   “On the Use of Common Information Model for Smart Grid Applications — A Conceptual Approach”\
+        #   K. Shahid, K. Nainar; R. Løvenstein Olsen; F. Iov; M. Lyhne; G. Morgante
+        # description: | # this will include new lines to allow paragraphs
+        #   Data integration from heterogeneous data sources in low-voltage (LV) power distribution grids will be valuable to distribution system operators (DSOs). 
+        #   The power measurements from customer premises need to be processed with other data such as grid topology, line parameters etc., 
+        #   to deploy smart grid applications (SGA) such as real-time grid monitoring and voltage regulation. The most challenging task for DSOs is to collect 
+        #   and integrate data from several sources as several entities are involved in the data management and access to databases are restricted. 
+        #   This paper presents an op E n common information M odel (CIM) BA sed sma R t grid application framewor K ( EMBARK ) to address the above-mentioned challenge. EMBARK is developed to be an efficient, modular and scalable architecture for extracting relevant grid related information from various asset management databases. A novel data management functionality is a part of EMBARK that enables data-driven update of settings and parameters of the algorithms behind smart grid applications. The proposed approach is demonstrated and numerically validated using grid data from a medium-sized distribution grid operator in Denmark. The architecture developed and presented in this paper can support all the phases from planning to the actual smart grid operation, i.e., automatically building the models to perform load flows, grid impact studies, planning, asset management etc.
+      - layout: top
+        title: ITIL Foundation
+        sub_title: APMG International
+        caption: 02998419-01-GIX6
+      - layout: top
+        title: Programming Mobile Applications for Android Handheld Systems
+        sub_title: Coursera.org
+        caption: K5SUMHJYBL
+
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      Alongside my interests in software engineering some of my other interests and hobbies are:
+      - Astronomy
+      - Astrophotography
+      - Telescopes
+      - Electronic
+      - 3D printing
+      - Tennis
+      - Books
+
+# Footer
+footer_show_references: false
+# references_title: References on request (Override references text)
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+remote_theme: sproogen/resume-theme
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
