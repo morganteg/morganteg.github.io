@@ -1,0 +1,62 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #0d1117;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+.text-accent { color: #f97316; }
+.bg-accent { background-color: #f97316; }
+.border-accent { border-color: #f97316; }
+
+.hero-img-container {
+    position: relative;
+    width: 320px;
+    height: 320px;
+}
+
+/* The circular ring from the template */
+.hero-img-container::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    right: -12px;
+    bottom: -12px;
+    border: 2px solid #f97316;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.glow-effect {
+    box-shadow: 0 0 60px rgba(249, 115, 22, 0.15);
+}
+
+/* Vertical line for the services section */
+.service-item {
+    position: relative;
+    padding-left: 3.5rem;
+}
+
+.service-item::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 45px;
+    bottom: -45px;
+    width: 2px;
+    background-color: #f97316;
+    opacity: 0.2;
+}
+
+.service-item:last-child::before { display: none; }
+
+.service-dot {
+    position: absolute;
+    left: 17px;
+    top: 15px;
+    width: 8px;
+    height: 8px;
+    background-color: #f97316;
+    border-radius: 50%;
+}
